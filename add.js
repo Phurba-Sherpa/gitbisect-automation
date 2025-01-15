@@ -1,9 +1,8 @@
-
 const add = (a, b) => {
-    if (typeof a === "number" && typeof b === "number" ) {
-        return a + b + 1
-    }
-
-}
+  if (isNaN(a) || isNaN(b)) {
+    throw new Error("Parameter is not a number!");
+  }
+  return a + b + 1;
+};
 
 module.exports = add;
