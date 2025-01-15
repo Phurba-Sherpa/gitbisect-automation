@@ -1,11 +1,43 @@
-# Git-bisect
+# Git Bisect Automation with Jest
 
-An automation git-bisect blend with test suite to make bug finding blazingly fast
-and with no human effort
+## About the Repository
 
-## Motivation & Goals
+This repository demonstrates an automated approach to `git bisect` using Node.js and Jest. By integrating automated testing, it identifies commits causing regressions or errors in the codebase. This project aims to save developers valuable time by removing the need for manual testing during the bisect process.
 
-Automating the git bisect with test suite will automate finding of bug committish
+The repository is designed to:
+- Automate `git bisect` using Node.js scripts.
+- Integrate Jest to test individual commits.
+- Simplify debugging and reduce the time spent identifying problematic commits.
 
-Saving time and effort immensely, especially if the bug has been introduced in production.
+## Features
+
+- **Jest Integration**: Automates testing for each commit using Jest test cases.
+- **Node.js Automation**: Leverages Node.js for script execution and streamlined workflows.
+- **Time Efficiency**: Minimizes manual effort in the debugging process.
+- **Easy to Use**: Simple setup and execution with clear documentation.
+
+## Prerequisites
+
+- **Node.js**: Ensure Node.js is installed on your system. ([Download Node.js](https://nodejs.org/))
+- **Git**: Git must be installed. ([Download Git](https://git-scm.com/))
+- **Jest**: This project uses Jest for testing; install it globally or as a dependency.
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/git-bisect-jest.git
+   cd git-bisect-jest
+
+1. Clone the repository:
+   ```bash
+   npm install
+
+## Usage
+
+   ```bash
+   git bisect start
+   git bisect bad
+   git bisect good <good-commit-hash (for our example use the first commit hash)>
+   git bisect run node_modules/.bin/jest
 
