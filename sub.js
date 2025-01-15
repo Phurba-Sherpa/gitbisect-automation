@@ -1,8 +1,7 @@
 
 export const sub = (a, b) => {
-    if (typeof a === "number" && typeof b === "number" ) {
-        return a - b
+    if (isNaN(a) || isNaN(b)) {
+        throw new Error("Parameter is not number")
     }
-
-    return null
+    return a - b
 }
