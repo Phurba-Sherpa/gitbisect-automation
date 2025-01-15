@@ -1,10 +1,12 @@
 
-export const divide = (a, b) => {
-    if (typeof a === "number" && typeof b === "number") {
-
-        if (b === 0) {
-            throw new Error("Denominator cannot be zero")
-        }
-        return a/b
+export const divide = (nume, deno) => {
+    if (isNaN(nume) || isNaN(deno)) {
+        throw new Error("Parameter is not number")
     }
+
+    if (deno === 0) {
+        throw new Error("Divisor cannot be zero")
+    }
+
+    return a/b
 }
