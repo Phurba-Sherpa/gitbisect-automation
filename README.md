@@ -26,8 +26,8 @@ The repository is designed to:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/git-bisect-jest.git
-   cd git-bisect-jest
+   git clone https://github.com/Phurba-Sherpa/gitbisect-automation.git
+   cd gitbisect-automation
 
 1. Clone the repository:
    ```bash
@@ -39,5 +39,5 @@ The repository is designed to:
    git bisect start
    git bisect bad
    git bisect good <good-commit-hash (for our example use the first commit hash)>
-   git bisect run node_modules/.bin/jest
+   git bisect run node_modules/.bin/jest add.test.js
 
